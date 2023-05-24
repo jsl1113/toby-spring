@@ -5,10 +5,10 @@ import com.example.tobyspring3.domain.User;
 import java.sql.*;
 
 public  class UserDao {
-    ConnectionMaker connectionMaker;
+    private ConnectionMaker connectionMaker;
 
     public UserDao() {
-        this.connectionMaker = connectionMaker;
+        connectionMaker = new DConncectionMaker();
     }
 
     //    SimpleConnectionMaker connectionMaker = new SimpleConnectionMaker();
